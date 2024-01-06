@@ -1,0 +1,132 @@
+/* General Style */
+@font-face {
+  font-family: "SolaimanLipi";
+  src: url("../fonts/SolaimanLipi.ttf");
+}
+
+html,
+body {
+  font-family: "SolaimanLipi", sans-serif;
+  overflow-x: hidden !important;
+}
+
+:root {
+  --font-color-primary: white;
+  --font-color-secondary: #e21373;
+  --font-color-title: #333333;
+  --border-color: white;
+  --hover-font-color: #fff;
+  --hover-bg-color: #000;
+  --bg-primary-color: #e2136e;
+  --bg-secondary-color: white;
+}
+
+.shadow-style {
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.shadow-style:hover {
+  color: #e21373;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.btn-style {
+  color: var(--font-color-secondary);
+  border: 2px solid var(--bg-primary-color);
+  background: transparent;
+  font-size: 1.2rem;
+  padding: 0.2rem 2.5rem;
+  transition: 0.8s;
+}
+.btn-style:hover {
+  background-color: var(--bg-primary-color);
+  color: white;
+}
+.dropdown:hover > .dropdown-menu {
+  transition: 1s;
+  display: block;
+}
+/* Navbar Style */
+.navbar-style {
+  background-color: var(--bg-primary-color);
+}
+nav .nav-link {
+  transition: 0.5s;
+  border: 2px dotted transparent;
+}
+nav .nav-link:hover {
+  border: 2px dotted var(--border-color);
+}
+.nav-btn {
+  text-align: center;
+  color: var(--font-color-primary);
+  border: 2px solid var(--border-color);
+  background: transparent;
+  font-size: 1.2rem;
+  padding: 0.4rem 2.5rem;
+  margin-left: 0.8rem;
+  transition: 0.8s;
+}
+.nav-btn:hover {
+  background-color: var(--bg-secondary-color);
+  color: var(--font-color-secondary);
+}
+/* Hero Style */
+
+/* Services Style */
+.services {
+  background-color: #fff0f7;
+}
+.services .card-body a {
+  color: var(--font-color-secondary);
+  text-decoration: none;
+}
+/* Slider */
+.slick-slide {
+  margin: 0px 10px;
+}
+.slick-slide img {
+  width: 50%;
+}
+/* Static banner style */
+.static-banner {
+  background: url("../images/static-banner.webp") no-repeat center center/cover;
+  width: 100%;
+  height: 35rem;
+  overflow: hidden;
+}
+.static-banner h1 {
+  color: var(--font-color-secondary);
+}
+/* Blog Style */
+
+/* Offer Style */
+.offer {
+  background-color: #fff4f9;
+}
+/* Feature Info Style */
+.feature-info {
+  background-color: #fff4f9;
+}
+.feature-info h2 {
+  color: var(--font-color-secondary);
+}
+.feature-info h2:hover {
+  text-decoration: underline;
+}
+/* Footer Style */
+footer {
+  background-color: #1e1e1e;
+}
+
+/* Responsive Style */
+@media only screen and (max-width: 576px) {
+  /* Hero Style */
+  .hero .carousel-item img {
+    height: 30vh;
+    object-fit: cover;
+  }
+  .offer-img {
+    height: 100vh;
+    object-fit: cover;
+  }
+}
